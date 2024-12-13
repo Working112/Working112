@@ -65,6 +65,23 @@
             margin-bottom: 15px;
         }
 
+        /* About Me Section */
+        #about {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        #about img {
+            max-width: 150px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        #about .text {
+            flex: 1;
+        }
+
         /* Achievements List */
         ul {
             list-style-type: disc;
@@ -73,6 +90,46 @@
 
         ul li {
             margin-bottom: 20px;
+        }
+
+        /* Projects Section */
+        .projects-container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .project {
+            flex: 1 1 calc(50% - 20px);
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 8px;
+            background-color: white;
+            text-align: center;
+        }
+
+        .project img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .project-caption {
+            color: #555;
+        }
+
+        /* Resume Section */
+        #resume {
+            text-align: center;
+            padding: 20px;
+        }
+
+        #resume img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 8px;
         }
 
         /* Footer Styling */
@@ -106,15 +163,20 @@
             <li><a href="#achievements">Achievements</a></li>
             <li><a href="#education">Education</a></li>
             <li><a href="#volunteer">Volunteer</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#resume">Resume</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
     <main>
         <section id="about">
-            <h2>About Me</h2>
-            <p>Hello! My name is Himansh Sahitya. I am a Senior at Rutgers Business School majoring in Business Analytics and Informational Technology. 
+            <img src="profile-placeholder.jpg" alt="Your Profile Picture">
+            <div class="text">
+                <h2>About Me</h2>
+                <p>Hello! My name is Himansh Sahitya. I am a Senior at Rutgers Business School majoring in Business Analytics and Informational Technology. 
                 Some key courses of interest I have taken include Management Information Systems, Operations Management, Financial Management, and Web & Database Applications.</p>
+            </div>
         </section>
 
         <section id="achievements">
@@ -133,30 +195,36 @@
             </ul>
         </section>
 
-        <section id="education">
-            <h2>High School</h2>
-            <p>I attended Woodbridge Academy Magnet School for Allied Health and Biomedical Science which offers a multitude of dual enrollment classes in medicine, 
-                research, and biomedical technology such as Dynamics of Healthcare, Medical Terminology, Clinical Research, Principles of Biomedical Science, & Anatomy and Physiology I & II. 
-                <br>Along with this are AP courses I took such as AP Biology, Literature, Language and Composition, & Environmental Sciences. 
-                <br>Lastly, there was a focus on being independent and have the ability to progress in your own chosen path which included doing a 
-                capstone on an idea of your choice. My idea was figuring out have people's level of sleep influenced their ability to excel a variety of tasks such as Mental Memory, Reaction Time, 
-                and Hand Grip strength. Sleep was self reported through bi weekly surveys, Hand Grip Strength was measured through a device known as a Dynamometer, 
-                while memory and reaction time were measured through the site human benchmark which has embedded important tests into playable games for enhanced aestheics and 
-                peeking the interest of users.</p>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="projects-container">
+                <div class="project">
+                    <img src="project1-placeholder.jpg" alt="Project 1">
+                    <p class="project-caption">Project 1 Description</p>
+                </div>
+                <div class="project">
+                    <img src="project2-placeholder.jpg" alt="Project 2">
+                    <p class="project-caption">Project 2 Description</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="resume">
+            <h2>Resume</h2>
+            <img src="resume-placeholder.jpg" alt="Resume Placeholder">
         </section>
 
         <section id="volunteer">
             <h2>Volunteer Experience</h2>
-            <p>I have volunteered with local community organizations, helping with various events and activities. Including but not limited to:
-                <li><b>My Whole Child Pediatrics Doctors Office in Piscataway, NJ</b> <br>40 + Hours over Junior Year Summer. 
-                    Responsibilities Included: Maintaining and Updating Patient Filing System, Shredding Old Documents, Maintaining Hygienic Areas, etc. </li> <br>
-                <li><b>Krishna Temple Edison</b> - Volunteered 80 hours over Freshman year summer to help clean, serve, and organize books, instruments, and supplies.</li><br>
-                <li><b>Krishna Temple Plainfield</b> - Served Food, Organized Food Supplies, Books, and other Prep Materials, 100+ Hours.</li><br>
-                <li><b>Play with Me Autism Foundation</b>- Volunteered 70 Hours Sophmore Year High School to Teach Dance and Fitness to a myriad of special needs kids on 
-                    zoom simultaneously.</li>
-
-                
-            </p>
+            <p>I have volunteered with local community organizations, helping with various events and activities.</p>
+            <ul>
+                <li><b>My Whole Child Pediatrics Doctors Office in Piscataway, NJ</b> <br>40+ Hours over Junior Year Summer. 
+                    Responsibilities Included: Maintaining and Updating Patient Filing System, Shredding Old Documents, Maintaining Hygienic Areas, etc.</li>
+                <li><b>Krishna Temple Edison</b> - Volunteered 80 hours over Freshman year summer to help clean, serve, and organize books, instruments, and supplies.</li>
+                <li><b>Krishna Temple Plainfield</b> - Served Food, Organized Food Supplies, Books, and other Prep Materials, 100+ Hours.</li>
+                <li><b>Play with Me Autism Foundation</b> - Volunteered 70 Hours Sophomore Year High School to Teach Dance and Fitness to a myriad of special needs kids on 
+                    Zoom simultaneously.</li>
+            </ul>
         </section>
     </main>
 
